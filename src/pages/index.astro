@@ -1,12 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import MiComponente from '../components/react/MyComponent.jsx';
+import UploaderForm from '@/components/react/UploaderForm';
+import '@/styles/globals.css';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<svg
+	<main class="h-screen flex items-center justify-center w-full">
+		<!-- <svg
 			class="astro-a"
 			width="495"
 			height="623"
@@ -34,9 +35,9 @@ import MiComponente from '../components/react/MyComponent.jsx';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<MiComponente client:load />
-		<p class="instructions">
+		<h1>Welcome to <span class="text-gradient">Astro</span></h1> -->
+		<UploaderForm client:load />
+		<!-- <p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
@@ -61,7 +62,7 @@ import MiComponente from '../components/react/MyComponent.jsx';
 				title="Community"
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
-		</ul>
+		</ul> -->
 	</main>
 </Layout>
 
