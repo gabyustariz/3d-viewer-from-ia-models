@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import UploaderForm from '@/components/react/UploaderForm';
 import '@/styles/globals.css';
+import GaussianSplatting from '@/components/GaussianSplatting.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -37,6 +38,7 @@ import '@/styles/globals.css';
 		</svg>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1> -->
 		<UploaderForm client:load />
+		<GaussianSplatting />
 		<!-- <p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.

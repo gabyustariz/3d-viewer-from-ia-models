@@ -101,7 +101,7 @@ const UploaderForm = () => {
 
         <div className="space-y-2">
           <Label className="text-black" htmlFor="option">Select Option</Label>
-          <Select className="text-black" value={selectedOption} onValueChange={handleOptionChange} required>
+          <Select value={selectedOption} onValueChange={handleOptionChange} required>
             <SelectTrigger>
               <SelectValue placeholder="Select an option" />
             </SelectTrigger>
